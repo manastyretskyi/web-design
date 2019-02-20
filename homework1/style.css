@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+}
+
+header {
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: auto;
+    background-color: rgba(0, 100, 0, 1);
+}
+
+nav {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto;
+}
+
+nav div {
+    display: inline-block;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.svgIcon-use {
+    fill: #fff;
+}
+
+
+/* .home-icon{} */
+
+.line {
+    border-width: 1px;
+    border-style: solid;
+    /* border-radius: 5px; */
+    border-color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    /* color: rgba(255, 255, 255, .85); */
+    /* fill: rgba(255, 255, 255, .85); */
+}
+
+.h28 {
+    flex: center;
+    height: 28px;
+    vertical-align: center;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-right: transparent white lighter;
+}
+
+
+/* .metabar {
+    float: left;
+}
+ */
+
+.authorization {
+    /* margin-right: 0px; */
+    margin: auto;
+    margin-right: 0px;
+    /* padding: 10px; */
+    color: #fff;
+    /* float: left; */
+}
+
+.authorization div {
+    /* font-family: medium-content-sans-serif-font; */
+    margin: 10px;
+}
+
+.singin {
+    /* float: right; */
+}
+
+.registration {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.navbar div {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.h10 {
+    margin-right: 10px;
+    margin-left: 5px;
+    height: 10px;
+}
+
+.freeCodeCamp {
+    flex: center;
+    height: 65px;
+    margin-right: 18;
+}
+
+
+/* nav {} */

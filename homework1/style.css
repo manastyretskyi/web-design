@@ -1,16 +1,25 @@
 body {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-bottom: 20px;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
     background-color: rgba(0, 100, 0, 1);
+}
+header a {
+    text-decoration: none;
+    color: #B5DDA8;
 }
 
 nav {
+    width: 1030px;
     display: grid;
     grid-row-gap: 10px;
     grid-template-columns: auto auto;
@@ -20,84 +29,112 @@ nav div {
     display: inline-block;
 }
 
-header a {
-    text-decoration: none;
-    color: #fff;
+.metabar {
+    display: flex;
+    align-self: baseline;
 }
 
 .svgIcon-use {
     fill: #fff;
 }
 
+.home-icon{
+    display: flex;
+    height: 45px;
 
-/* .home-icon{} */
-
-.line {
-    border-width: 1px;
-    border-style: solid;
-    /* border-radius: 5px; */
-    border-color: #fff;
-    border-right: 1px solid rgba(255, 255, 255, .2);
-    /* color: rgba(255, 255, 255, .85); */
-    /* fill: rgba(255, 255, 255, .85); */
 }
-
-.h28 {
-    flex: center;
+.home-icon::after {
+    content: "";
+    background-color: rgba(255,255,255,.2);
+    width: 1px;
     height: 28px;
-    vertical-align: center;
-    margin-right: 20px;
     margin-left: 15px;
-    border-right: transparent white lighter;
+    margin-right: 20px;
+    flex: center;
+    align-self: center;
+}
+.freeCodeCamp {
+    margin-top: 5px;
+    margin-right: 25px;
+}
+.follow{
+    display: flex;
 }
 
-
-/* .metabar {
-    float: left;
+@media screen and (max-width: 1200px){
+    .follow{
+        display: none;
+    }
 }
- */
-
-.authorization {
-    /* margin-right: 0px; */
-    margin: auto;
-    margin-right: 0px;
-    /* padding: 10px; */
-    color: #fff;
-    /* float: left; */
-}
-
-.authorization div {
-    /* font-family: medium-content-sans-serif-font; */
-    margin: 10px;
-}
-
-.singin {
-    /* float: right; */
-}
-
-.registration {
+.follow > button{
+    align-self: center;
+    background-color: transparent;
+    color: #B5DDA8;
+    padding-left: 15px;
+    padding-right: 15px;
     border-width: 1px;
     border-style: solid;
+    border-color: #B5DDA8;
     border-radius: 5px;
 }
 
+
+.authorization {
+    margin: auto;
+    margin-right: 0px;
+}
+
+.authorization div {
+    margin: 10px;
+}
+
+.authorization > button{
+    width: 105px;
+    height: 35px;
+    background-color: transparent;
+    color: #B5DDA8;
+
+}
+.singin{
+    border: none;
+}
+@media screen and (max-width: 770px){
+    .singin{
+        display: none;
+    }
+}
+.singup{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B5DDA8;
+    border-radius: 3px;
+}
+.navbar{
+    display: flex;
+    align-items: stretch;
+    color: #B5DDA8;
+}
 .navbar div {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.h10 {
-    margin-right: 10px;
+.learntocode{
+    display: flex;
+    align-content: center;
+}
+.learntocode::before{
+    content: "";
+    background-color: #8ABF7C;
+    width: 1px;
+    height: 18px;
     margin-left: 5px;
-    height: 10px;
-}
-
-.freeCodeCamp {
+    margin-right: 10px;
     flex: center;
-    height: 65px;
-    margin-right: 18;
+    align-self: center;
+    
 }
 
-
-/* nav {} */

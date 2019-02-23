@@ -1,75 +1,86 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    di
+}
+
 body {
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
-
-header {
-    padding: 10px;
-    padding-bottom: 20px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
+header{
+    background-color: rgba(0, 100, 0, 1);
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 100, 0, 1);
 }
-header a {
-    text-decoration: none;
-    color: #B5DDA8;
-}
-
-nav {
-    width: 1030px;
-    display: grid;
-    grid-row-gap: 10px;
-    grid-template-columns: auto auto;
-}
-
-nav div {
-    display: inline-block;
-}
-
-.metabar {
+nav{
     display: flex;
-    align-self: baseline;
+    max-width: 1138px;
+    width: 100%;
+    padding: 10px 0;
+    overflow: hidden;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
-
-.svgIcon-use {
-    fill: #fff;
+.metabar{
+    flex-grow: 1;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
-
 .home-icon{
     display: flex;
-    height: 45px;
-
 }
-.home-icon::after {
+.home-icon::after{
     content: "";
     background-color: rgba(255,255,255,.2);
     width: 1px;
-    height: 28px;
-    margin-left: 15px;
+    height: 30px;
+    margin-left: 20px;
     margin-right: 20px;
-    flex: center;
     align-self: center;
 }
-.freeCodeCamp {
-    margin-top: 5px;
-    margin-right: 25px;
+.svgIcon-use{
+    fill: #fff;
 }
 .follow{
-    display: flex;
+    margin-left: 25px;
 }
+.follow > button{
+    background-color: transparent;
+    color: #B5DDA8;
+    padding-top: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B5DDA8;
+    border-radius: 3px;
+}
+.authorization{
+    margin-left: auto;
+    margin-right: 0;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+.authorization > button{
+    font-size: 16px;
+    margin-top: 3px;
+    height: 40px;
+    background-color: transparent;
+    color: #B5DDA8;
 
-@media screen and (max-width: 1200px){
-    .follow{
+}
+.signin{
+    margin-right: 10px;
+    border: none;
+}
+@media(max-width: 770px){
+    .signin{
         display: none;
     }
 }
-.follow > button{
-    align-self: center;
-    background-color: transparent;
-    color: #B5DDA8;
+.signup{
+    width: 115px;
     padding-left: 15px;
     padding-right: 15px;
     border-width: 1px;
@@ -77,64 +88,39 @@ nav div {
     border-color: #B5DDA8;
     border-radius: 5px;
 }
-
-
-.authorization {
-    margin: auto;
-    margin-right: 0px;
-}
-
-.authorization div {
-    margin: 10px;
-}
-
-.authorization > button{
-    width: 105px;
-    height: 35px;
-    background-color: transparent;
-    color: #B5DDA8;
-
-}
-.singin{
-    border: none;
-}
-@media screen and (max-width: 770px){
-    .singin{
-        display: none;
-    }
-}
-.singup{
-    padding-left: 15px;
-    padding-right: 15px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #B5DDA8;
-    border-radius: 3px;
-}
 .navbar{
+    flex-basis: 100%;
     display: flex;
-    align-items: stretch;
-    color: #B5DDA8;
+    justify-content: baseline;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    align-items: center;
 }
-.navbar div {
-    font-size: 14px;
-    margin-left: 5px;
-    margin-right: 5px;
+.navbar a{
+    text-transform: uppercase;
+    padding-right: 10px;
+    color: #B5DDA8;
+    text-decoration: none;
 }
 
+#home{
+    padding-right: 20px;
+}
 .learntocode{
     display: flex;
-    align-content: center;
 }
 .learntocode::before{
     content: "";
     background-color: #8ABF7C;
     width: 1px;
-    height: 18px;
-    margin-left: 5px;
+    height: 20px;
     margin-right: 10px;
     flex: center;
     align-self: center;
     
 }
-
+@media(max-width: 1200px){
+    .follow{
+        display: none;
+    }
+}

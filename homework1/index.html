@@ -3,30 +3,29 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shortcuts.css">
     <script src="script.js"></script>
     <title>Homepage</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="metabar">
-                <div class="home-icon">
+    <header class="flex justifyContentCenter">
+        <nav class="flex overflowHidden flexWrapWrap">
+            <div class="metabar flex">
+                <div class="home-icon flex">
                     <a href="https://medium.com/">
                         <svg class="svgIcon-use" width="45" height="45"><path d="M5 40V5h35v35H5zm8.56-12.627c0 .555-.027.687-.318 1.03l-2.457 2.985v.396h6.974v-.396l-2.456-2.985c-.291-.343-.344-.502-.344-1.03V18.42l6.127 13.364h.714l5.256-13.364v10.644c0 .29 0 .342-.185.528l-1.848 1.796v.396h9.19v-.396l-1.822-1.796c-.184-.186-.21-.238-.21-.528V15.937c0-.291.026-.344.21-.528l1.823-1.797v-.396h-6.471l-4.622 11.542-5.203-11.542h-6.79v.396l2.14 2.64c.239.292.291.37.291.768v10.353z"></path></svg>
                     </a>
                 </div>
                 <div class="freeCodeCamp">
                     <a href="https://medium.freecodecamp.org?source=logo-lo_iWIHou9juMha---336d898217ee">
-                        <img height="36" width="330" src="https://cdn-images-1.medium.com/letterbox/300/36/50/50/1*wViBNJ1o9rM5p6b-gf3vxg.png?source=logoAvatar-lo_iWIHou9juMha---336d898217ee" alt="freeCodeCamp.org">
+                        <img height="36" width="300" src="https://cdn-images-1.medium.com/letterbox/300/36/50/50/1*wViBNJ1o9rM5p6b-gf3vxg.png?source=logoAvatar-lo_iWIHou9juMha---336d898217ee" alt="freeCodeCamp.org">
                     </a>
                 </div>
-                <div class="follow">
-                    <button>
-                        Follow
-                    </button>
-                </div>
+                <button class="follow marginLeft15">
+                    Follow
+                </button>
             </div>
             <div class="authorization">
                 <button class="signin">
@@ -36,10 +35,10 @@
                     Get started
                 </button>
             </div>
-            <div class="navbar">
+            <div class="navbar flexBasis100p">
                 <a href="" id="home">Home</a>
                 <a href="" id="dev"> Dev</a>
-                <div class="learntocode">
+                <div class="learntocode flex">
                     <a href="">Learn to code for free</a>
                 </div>
                 <svg class="svgIcon-use" width="25" height="25" id="search">
@@ -48,7 +47,51 @@
             </div>
         </nav>
     </header>
-
+    <div class="flex flexWrapWrap justifyContentCenter">
+        <div class="flex flexWrapWrap" id="content-inner">
+            <h1>How to make your HTML responsive by adding a single line of CSS</h1>
+            <div class="flex" id="section-author">
+                <div id="avatar">
+                    <a href="https://medium.freecodecamp.org/@perborgen?source=post_header_lockup" data-action="show-user-card" data-action-source="post_header_lockup" data-action-value="30d952e8c7e6" data-action-type="hover" data-user-id="30d952e8c7e6" data-collection-slug="free-code-camp" dir="auto">
+                        <div class="height50">
+                            <img src="https://cdn-images-1.medium.com/fit/c/50/50/0*EdUYcQhX6TPWdQ6p.jpg" class="avatar-image" alt="Go to the profile of Per Harald Borgen">
+                            <div id="avatar-halo" class="avatar-halo" >
+                                <svg width="60" height="60"viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
+                                    </path>
+                                    <path d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="caption fontSize14 flex1 paddingLeft15 overflowHidden paddingTop5">
+                    <div class="paddingBottom3">
+                        <a class="link-textDecorationNone" href="https://medium.freecodecamp.org/@perborgen" data-action="show-user-card" data-action-value="30d952e8c7e6" data-action-type="hover" data-user-id="30d952e8c7e6" data-collection-slug="free-code-camp" dir="auto">Per Harald Borgen</a>
+                        <button class="follow marginLeft10 buttonDark">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="">
+                        <time datetime="2017-12-08T05:37:03.525Z">
+                            Dec 8, 2017
+                        </time>
+                        <span class="middotDivider u-fontSize12">
+                        </span>
+                        <span class="readingTime" title="6 min read">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <figure class="flex flexWrapWrap flexBasis100p justifyContentCenter marginTop30">
+            <img src="https://cdn-images-1.medium.com/max/1000/1*Bx0gNW69lAXaSRqRw0_8dw.jpeg">
+            <figcaption class="imageCaption fontSize14 marginTop15">
+                Photo by <a href="https://medium.com/@tjholowaychuk">TJ Holowaychuk</a>
+            </figcaption>
+        </figure>
+    </div>
 </body>
 
 </html>

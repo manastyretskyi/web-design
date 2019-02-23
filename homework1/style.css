@@ -1,6 +1,5 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    di
 }
 
 body {
@@ -8,64 +7,42 @@ body {
 }
 header{
     background-color: rgba(0, 100, 0, 1);
-    display: flex;
-    justify-content: center;
 }
 nav{
-    display: flex;
-    max-width: 1138px;
+    max-width: 1072px;
     width: 100%;
-    padding: 10px 0;
-    overflow: hidden;
+    padding: 10px 20px 0 20px;
     align-items: flex-start;
-    flex-wrap: wrap;
 }
 .metabar{
     flex-grow: 1;
-    margin-left: 0;
-    display: flex;
     align-items: center;
     margin-bottom: 10px;
-}
-.home-icon{
-    display: flex;
 }
 .home-icon::after{
     content: "";
     background-color: rgba(255,255,255,.2);
     width: 1px;
-    height: 30px;
-    margin-left: 20px;
+    height: 28px;
+    margin-left: 15px;
     margin-right: 20px;
     align-self: center;
 }
 .svgIcon-use{
-    fill: #fff;
+    fill: #F3FFEA;
 }
 .follow{
-    margin-left: 25px;
-}
-.follow > button{
     background-color: transparent;
     color: #B5DDA8;
-    padding-top: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 0 10px;
     border-width: 1px;
     border-style: solid;
     border-color: #B5DDA8;
-    border-radius: 3px;
-}
-.authorization{
-    margin-left: auto;
-    margin-right: 0;
-    flex-shrink: 0;
-    align-self: flex-start;
+    border-radius: 5px;
 }
 .authorization > button{
-    font-size: 16px;
-    margin-top: 3px;
-    height: 40px;
+    margin-top: 4px;
+    height: 37px;
     background-color: transparent;
     color: #B5DDA8;
 
@@ -80,25 +57,21 @@ nav{
     }
 }
 .signup{
-    width: 115px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-width: 1px;
     border-style: solid;
     border-color: #B5DDA8;
     border-radius: 5px;
 }
 .navbar{
-    flex-basis: 100%;
+    font-size: 15px;
     display: flex;
-    justify-content: baseline;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     align-items: center;
 }
 .navbar a{
     text-transform: uppercase;
-    padding-right: 10px;
     color: #B5DDA8;
     text-decoration: none;
 }
@@ -107,15 +80,15 @@ nav{
     padding-right: 20px;
 }
 .learntocode{
-    display: flex;
+    align-items: center;
 }
 .learntocode::before{
     content: "";
     background-color: #8ABF7C;
     width: 1px;
-    height: 20px;
+    height: 18px;
+    margin-left: 5px;
     margin-right: 10px;
-    flex: center;
     align-self: center;
     
 }
@@ -123,4 +96,52 @@ nav{
     .follow{
         display: none;
     }
+}
+
+#content-inner{
+    max-width: 740px;
+    padding: 0 20px;
+}
+#content-inner > h1{
+
+    padding-top: 25px;
+    letter-spacing: 0;
+    overflow-wrap: break-word;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0;
+    margin: 0;
+}
+#section-author{
+    margin: 25px auto;
+    flex-basis: 100%;
+}
+#avatar{
+    position: relative;
+}
+.avatar-image{
+    border-radius: 100%;
+    size: 50px 50px;
+}
+#avatar-halo{
+    top: -5px;
+    left: -5px;
+    color: #03a87c;
+    fill: #03a87c;
+    position: absolute;
+}
+.imageCaption {
+    position: relative;
+    left: 0;
+    width: 100%;
+    top: 0;
+    color: rgba(0,0,0,.68);
+    outline: 0;
+    text-align: center;
+    z-index: 300;
+}
+.imageCaption > a{
+    color: #3E8432 !important;
+    text-decoration: none;
 }

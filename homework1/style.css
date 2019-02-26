@@ -31,7 +31,8 @@ h3, h4, p, blockquote{
     margin: 0;
 }
 .a--black{
-    color: black
+    color: black;
+    text-decoration: none!important;
 }
 button{
     background-color: transparent;
@@ -247,8 +248,7 @@ div.after__figure{
 }
 .inset-column__graf--p{
     flex-basis: 100%;
-    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-    letter-spacing: .01rem;
+    font-family: serif;
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
@@ -256,8 +256,7 @@ div.after__figure{
     letter-spacing: -.003em;
 }
 .inset-column__graf--p__quote{
-    background-color: transparent !important;
-    background-image: linear-gradient(to bottom, rgba(222, 250, 211, 1), rgba(222, 250, 211, 1));
+    background-color: rgba(222, 250, 211, 1);
 }
 p.after__figure{
     margin-top: 20px;
@@ -304,8 +303,11 @@ figure.after__pullquote{
 figure.after__p{
     margin-top: 45px;
 }
+.last-section{
+    padding-bottom: 5px;
+}
 .section-content__inset-column code{
-    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+    font-family: Courier;
     font-size: 16px;
     background: rgba(0,0,0,.05);
     padding: 3px 4px;
@@ -318,7 +320,7 @@ figure.after__p{
     padding: 0;
     padding-left: 50px;
     text-align: left;
-    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-family: serif;
     font-weight: 400;
     font-style: italic;
     font-size: 30px;
@@ -362,21 +364,17 @@ figure.after__p{
 }
 .inset-column__graf--h3{
     flex-basis: 100%;
-    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
-    letter-spacing: -.02em;
+    font-family: sans-serif;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0;
     font-size: 34px;
     line-height: 1.15;
     letter-spacing: -.015em;
 }
 .inset-column__graf--h4{
-    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
-    letter-spacing: -.02em;
+    font-family: sans-serif;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0;
     font-size: 26px;
     line-height: 1.22;
     letter-spacing: -.012em;
@@ -386,14 +384,13 @@ figure.after__p{
     background: rgba(0,0,0,.05);
     padding: 20px;
     white-space: pre-wrap;
-    font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+    font-family: Courier;
     font-size: 16px;
     line-height: 1.4;
     margin-bottom: 0;
 }
 .inset-column__graf--blockquote{
-    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-    letter-spacing: .01rem;
+    font-family: Georgia;
     font-weight: 400;
     font-style: italic;
     font-size: 21px;
@@ -403,4 +400,28 @@ figure.after__p{
     padding-left: 20px;
     margin-left: -23px;
     padding-bottom: 2px;
+}
+.last-section hr.section-divider{
+    border: 0;
+    text-align: center;
+    overflow: visible;
+    margin-top: 52px;
+}
+.last-section hr.section-divider::before{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: .6em;
+    content: '...';
+    margin-left: .6em;
+    color: rgba(0,0,0,.68);
+    position: relative;
+    top: -30px;
+}
+.inset-column__graf--leading{
+    font-family: Georgia;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
 }

@@ -9,8 +9,8 @@
 
 <body>
 
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <div class="metabar">
                 <div class="metabar__home-icon">
                     <a href="https://medium.com/">
@@ -51,21 +51,23 @@
             <div class="post-article__content">
                 <section class="first-section">
                     <div class="section-content">
-                        <div class="section-content__inset-column">
-                            <h1>How to make your HTML responsive by adding a single line of CSS</h1>
-                            <div class="section-content--author section-inner">
-                                <a href="https://medium.freecodecamp.org/@perborgen?source=post_header_lockup">
-                                    <img src="https://cdn-images-1.medium.com/fit/c/50/50/0*EdUYcQhX6TPWdQ6p.jpg" class="avatar-image" alt="Go to the profile of Per Harald Borgen">
-                                    <div class="section-content--author__avatar-halo" >
-                                        <svg width="60" height="60"viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
-                                            </path>
-                                            <path d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <div class="section-content--author__second">
+                        <header class="section-content-header">
+                            <h1 class="section-content-header__h1">How to make your HTML responsive by adding a single line of CSS</h1>
+                            <div class="section-content-header__author">
+                                <div class="section-content-header__first">
+                                    <a href="https://medium.freecodecamp.org/@perborgen?source=post_header_lockup">
+                                        <img src="https://cdn-images-1.medium.com/fit/c/50/50/0*EdUYcQhX6TPWdQ6p.jpg" class="section-content-header__avatar-image" alt="Go to the profile of Per Harald Borgen">
+                                        <div class="section-content-header__avatar-halo" >
+                                            <svg width="60" height="60"viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
+                                                </path>
+                                                <path d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="section-content-header__second">
                                     <a class="a--black" href="https://medium.freecodecamp.org/@perborgen">Per Harald Borgen</a>
                                     <div class="section-content--author__follow-btn">
                                         <button class="follow-btn btn--dark">
@@ -83,132 +85,111 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="section-inner section-content__outset-column">
-                            <figure>
-                                <img src="https://cdn-images-1.medium.com/max/1000/1*Bx0gNW69lAXaSRqRw0_8dw.jpeg">
-                                <figcaption>
-                                    Photo by <a href="https://medium.com/@tjholowaychuk">TJ Holowaychuk</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="section-inner section-content__inset-column after__figure">
-                            <p class="inset-column__graf--p after__figure">
-                                In this article I’ll teach you how to use CSS Grid to create a super cool image grid which varies the amount of columns with the width of the screen.
-                            </p>
-                            <p class="inset-column__graf--p after__p">And the most beautiful part:
-                                <strong> the responsiveness will be added with a single line of CSS.</strong>
-                            </p>
-                            <p class="inset-column__graf--p after__p">
-                                This means we don’t have to clutter up the HTML with ugly class names (i.e. 
-                                <code>col-sm-4</code>, <code>col-md-8</code>) or create media queries for every single screen size.
-                            </p>
-                            <blockquote class="inset-column__graf--pullquote after__p">
+                        </header>
+                        <figure class="section-content__figure">
+                            <img src="https://cdn-images-1.medium.com/max/1000/1*Bx0gNW69lAXaSRqRw0_8dw.jpeg">
+                            <figcaption>
+                                Photo by <a href="https://medium.com/@tjholowaychuk">TJ Holowaychuk</a>
+                            </figcaption>
+                        </figure>
+                        <div class="section-content__inset-column">
+                            <p>In this article I’ll teach you how to use CSS Grid to create a super cool image grid which varies the amount of columns with the width of the screen.</p>
+                            <p>And the most beautiful part:<strong> the responsiveness will be added with a single line of CSS.</strong></p>
+                            <p>This means we don’t have to clutter up the HTML with ugly class names (i.e. <code>col-sm-4</code>, <code>col-md-8</code>) or create media queries for every single screen size.</p>
+                            <blockquote class="inset-column__pullquote">
                                 I’ve also created a free CSS Grid course. 
-                                <a href="https://scrimba.com/g/gR8PTE">
-                                    Click here to get full access to&nbsp;it.
-                                </a>
+                                <a href="https://scrimba.com/g/gR8PTE">Click here to get full access to&nbsp;it.</a>
                             </blockquote>
-                            <figure class="inset-column__graf--figure after__pullquote">
+                            <figure class="inset-column__figure">
                                 <a href="https://scrimba.com/g/gR8PTE">
-                                    <img class="inset-column__graf--figure__img1" src="https://cdn-images-1.medium.com/max/800/1*OKboVzVnQKyPQJT4MyddYQ.png">
+                                    <img class="inset-column__img1" src="https://cdn-images-1.medium.com/max/800/1*OKboVzVnQKyPQJT4MyddYQ.png">
                                 </a>
-                                <figcaption>
-                                        Click the image to get to the&nbsp;course.
-                                </figcaption>
+                                <figcaption>Click the image to get to the&nbsp;course.</figcaption>
                             </figure>
-                            <p class="inset-column__graf--p after__figure">Now let’s jump into it!</p>
-                            <h3 class="inset-column__graf--h3 after__p">The setup</h3>
-                            <p class="inset-column__graf--p after__h3">
-                                For this article, we’ll continue on with the grid we used in 
-                                <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">
-                                    my first CSS Grid article.
-                                </a> 
-                                Then we’ll add the images at the end of the article. Here’s how our initial grid looks:
-                            </p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
+                            <p>Now let’s jump into it!</p>
+                            <h3>The setup</h3>
+                            <p>For this article, we’ll continue on with the grid we used in <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">my first CSS Grid article.</a> Then we’ll add the images at the end of the article. Here’s how our initial grid looks:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">Here’s the HTML:</p>
-                            <pre class="inset-column__graf--pre after__p">&lt;div class="container"&gt;<br>  &lt;div&gt;1&lt;/div&gt;<br>  &lt;div&gt;2&lt;/div&gt;<br>  &lt;div&gt;3&lt;/div&gt;<br>  &lt;div&gt;4&lt;/div&gt;<br>  &lt;div&gt;5&lt;/div&gt;<br>  &lt;div&gt;6&lt;/div&gt;<br>&lt;/div&gt;</pre>
-                            <p class="inset-column__graf--p after__pre">And the CSS:</p>
-                            <pre class="inset-column__graf--pre after__p">.container {<br>    display: grid;<br>    grid-template-columns: 100px 100px 100px;<br>    grid-template-rows: 50px 50px;<br>}</pre>
-                            <blockquote class="inset-column__graf--blockquote after__pre">
+                            <p>Here’s the HTML:</p>
+                            <pre>&lt;div class="container"&gt;<br>  &lt;div&gt;1&lt;/div&gt;<br>  &lt;div&gt;2&lt;/div&gt;<br>  &lt;div&gt;3&lt;/div&gt;<br>  &lt;div&gt;4&lt;/div&gt;<br>  &lt;div&gt;5&lt;/div&gt;<br>  &lt;div&gt;6&lt;/div&gt;<br>&lt;/div&gt;</pre>
+                            <p>And the CSS:</p>
+                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: 100px 100px 100px;<br>    grid-template-rows: 50px 50px;<br>}</pre>
+                            <blockquote class="inset-column__blockquote">
                                 Note: the example also has a little bit of basic styling, which I won’t go into here, as it’s got nothing to do with CSS Grid.
                             </blockquote>
-                            <p class="inset-column__graf--p after__blockquote">
-                                If this code confuses you, I’d recommend you to read my 
-                                <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">Learn CSS Grid in 5 minutes</a> article, where I explain the basics of the layout module.
-                            </p>
-                            <p class="inset-column__graf--p after__p">Let’s start by making the columns responsive.</p>
-                            <h3 class="inset-column__graf--h3 after__p">Basic responsiveness with the fraction&nbsp;unit</h3>
-                            <p class="inset-column__graf--p after__h3">CSS Grid brings with it a whole new value called a fraction unit. The fraction unit is written like <code>fr</code>, and it allows you to split the container into as many fractions as you want.</p>
-                            <p class="inset-column__graf--p after__p">Let’s change each of the columns to be one fraction unit wide.</p>
-                            <pre class="inset-column__graf--pre after__p">.container {<br>    display: grid;<br>    grid-template-columns: 1fr 1fr 1fr;<br>    grid-template-rows: 50px 50px;<br>}</pre>
-                            <p class="inset-column__graf--p after__pre">What happens here is that the grid splits the entire width into three fractions and each of the columns take up one unit each. Here is the result:</p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__gif" src="https://cdn-images-1.medium.com/max/800/1*JgGPqT2AfFNDD8DhG2wPdQ.gif">
+                            <p>
+                                If this code confuses you, I’d recommend you to read my <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">Learn CSS Grid in 5 minutes</a> article, where I explain the basics of the layout module.</p>
+                            <p>Let’s start by making the columns responsive.</p>
+                            <h3>Basic responsiveness with the fraction&nbsp;unit</h3>
+                            <p>CSS Grid brings with it a whole new value called a fraction unit. The fraction unit is written like <code>fr</code>, and it allows you to split the container into as many fractions as you want.</p>
+                            <p>Let’s change each of the columns to be one fraction unit wide.</p>
+                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: 1fr 1fr 1fr;<br>    grid-template-rows: 50px 50px;<br>}</pre>
+                            <p>What happens here is that the grid splits the entire width into three fractions and each of the columns take up one unit each. Here is the result:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*JgGPqT2AfFNDD8DhG2wPdQ.gif">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">
+                            <p>
                                 If we change the <code>grid-template-columns</code> value to<code>1fr 2fr 1fr</code>, the second column will now be twice as wide as the two other columns. The total width is now four fraction units, and the second one takes up two of them, while the others take up one each. Here’s how that looks:
                             </p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__gif" src="https://cdn-images-1.medium.com/max/800/1*cpfokc1HBgCwOTNhRU9SHg.gif">
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*cpfokc1HBgCwOTNhRU9SHg.gif">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">In other words, the fraction unit value makes it super easy for you to change the width of the columns.</p>
-                            <h3 class="inset-column__graf--h3 after__p">Advanced responsiveness</h3>
-                            <p class="inset-column__graf--p after__h3">However, the example above doesn’t give us the responsiveness we want, as this grid will always be three columns wide. We want our grid to vary the amount of columns with the width of the container. To achieve that, you’ll have to learn three new concepts.</p>
-                            <h4 class="inset-column__graf--h4 after__p">repeat()</h4>
-                            <p class="inset-column__graf--p after__h4">We’ll start with the <code>repeat()</code> function. This is a more powerful way of specifying your columns and rows. Let’s take our original grid and change it to using repeat():</p>
-                            <pre class="inset-column__graf--pre after__p">.container {<br>    display: grid;<br>    grid-template-columns: repeat(3, 100px);<br>    grid-template-rows: repeat(2, 50px);<br>}</pre>
-                            <p class="inset-column__graf--p after__pre">In other words, <code>repeat(3, 100px)</code> is identical to <code>100px 100px 100px</code>. The first parameter specified how many columns or rows you want, and the second specifies their width, so this will just give us the exact same layout as we started out with:</p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
+                            <p>In other words, the fraction unit value makes it super easy for you to change the width of the columns.</p>
+                            <h3>Advanced responsiveness</h3>
+                            <p>However, the example above doesn’t give us the responsiveness we want, as this grid will always be three columns wide. We want our grid to vary the amount of columns with the width of the container. To achieve that, you’ll have to learn three new concepts.</p>
+                            <h4>repeat()</h4>
+                            <p>We’ll start with the <code>repeat()</code> function. This is a more powerful way of specifying your columns and rows. Let’s take our original grid and change it to using repeat():</p>
+                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: repeat(3, 100px);<br>    grid-template-rows: repeat(2, 50px);<br>}</pre>
+                            <p>In other words, <code>repeat(3, 100px)</code> is identical to <code>100px 100px 100px</code>. The first parameter specified how many columns or rows you want, and the second specifies their width, so this will just give us the exact same layout as we started out with:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
                             </figure>
-                            <h4 class="inset-column__graf--h4 after__figure">auto-fit</h4>
-                            <p class="inset-column__graf--p after__h4">Then there’s auto-fit. Let’s skip having a fixed amount of columns, and rather replace 3 with <code>auto-fit</code>.</p>
-                            <pre class="inset-column__graf--pre after__p">.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, 100px);<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
-                            <p class="inset-column__graf--p after__pre">This results in the following behaviour:</p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__gif" src="https://cdn-images-1.medium.com/max/800/1*vLZ9RD3dt0Q3hCieYfRuMg.gif">
+                            <h4>auto-fit</h4>
+                            <p>Then there’s auto-fit. Let’s skip having a fixed amount of columns, and rather replace 3 with <code>auto-fit</code>.</p>
+                            <pre>.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, 100px);<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
+                            <p>This results in the following behaviour:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*vLZ9RD3dt0Q3hCieYfRuMg.gif">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">The grid now varies the amount of columns with the width of the container.</p>
-                            <blockquote class="inset-column__graf--pullquote after__p">It simply tries to fit as many 100px wide columns into the container as possible.</blockquote>
-                            <p class="inset-column__graf--p after__pullquote">However, if we hard code all columns to be exactly 100px, we’ll never get the flexibility we want, as they’ll rarely add up to the full width. As you can see on the gif above, the grid often leaves white space on the right hand side.</p>
-                            <h4 class="inset-column__graf--h4 after__p">minmax()</h4>
-                            <p class="inset-column__graf--p after__h4">The final ingredient we need in order to fix this is called <code>minmax()</code>. We’ll simply replace 100px with <code>minmax(100px, 1fr)</code>. Here’s the final CSS.</p>
-                            <pre class="inset-column__graf--pre after__p">.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
-                            <blockquote class="inset-column__graf--pullquote after__pre">Notice that all the responsiveness happens in a single line of&nbsp;CSS.</blockquote>
-                            <p class="inset-column__graf--p after__pullquote">This results in the following behavior:</p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__gif" src="https://cdn-images-1.medium.com/max/800/1*1FOrkyNbaabo3_LJxcdDbg.gif">
+                            <p>The grid now varies the amount of columns with the width of the container.</p>
+                            <blockquote class="inset-column__pullquote">It simply tries to fit as many 100px wide columns into the container as possible.</blockquote>
+                            <p>However, if we hard code all columns to be exactly 100px, we’ll never get the flexibility we want, as they’ll rarely add up to the full width. As you can see on the gif above, the grid often leaves white space on the right hand side.</p>
+                            <h4>minmax()</h4>
+                            <p>The final ingredient we need in order to fix this is called <code>minmax()</code>. We’ll simply replace 100px with <code>minmax(100px, 1fr)</code>. Here’s the final CSS.</p>
+                            <pre>.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
+                            <blockquote class="inset-column__pullquote">Notice that all the responsiveness happens in a single line of&nbsp;CSS.</blockquote>
+                            <p>This results in the following behavior:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*1FOrkyNbaabo3_LJxcdDbg.gif">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">And as you can see that works perfectly. <span class="inset-column__graf--p__quote">The <code>minmax()</code> function defines a size range greater than or equal to <strong>min</strong> and less than or equal to max.</span></p>
-                            <p class="inset-column__graf--p after__p">So the columns will now always be at least 100px. However if there are more available space, the grid will simply distribute this equally to each of the columns, as the columns turn into a fraction unit instead of 100 px.</p>
-                            <h4 class="inset-column__graf--h4 after__p">Adding the&nbsp;images</h4>
-                            <p class="inset-column__graf--p after__h4">Now the final step is to add the images. This has nothing to do with CSS Grid, but let’s still look at the code.</p>
-                            <p class="inset-column__graf--p after__p">We’ll start off by adding an image tag inside of each of the grid items.</p>
-                            <pre class="inset-column__graf--pre after__p">&lt;div&gt;&lt;img src="img/forest.jpg"/&gt;&lt;/div&gt;</pre>
-                            <p class="inset-column__graf--p after__pre">To make the image fit into the item, we’ll set the it to be as wide and tall as the item itself, and then use <code>object-fit: cover;</code>. This will make the image cover its entire container, and the browser will crop it if it’s needed.</p>
-                            <pre class="inset-column__graf--pre after__p">.container &gt; div &gt; img {<br>    width: 100%;<br>    height: 100%;<br>    object-fit: cover;<br>}</pre>
-                            <p class="inset-column__graf--p after__pre">Which ends up like the following:</p>
-                            <figure class="inset-column__graf--figure after__p">
-                                <img class="inset-column__graf--figure__gif2" src="https://cdn-images-1.medium.com/max/800/1*jCNANupl0ECRzF6cOLuWNw.gif">
+                            <p>And as you can see that works perfectly. <span class="__quote">The <code>minmax()</code> function defines a size range greater than or equal to <strong>min</strong> and less than or equal to max.</span></p>
+                            <p>So the columns will now always be at least 100px. However if there are more available space, the grid will simply distribute this equally to each of the columns, as the columns turn into a fraction unit instead of 100 px.</p>
+                            <h4>Adding the&nbsp;images</h4>
+                            <p>Now the final step is to add the images. This has nothing to do with CSS Grid, but let’s still look at the code.</p>
+                            <p>We’ll start off by adding an image tag inside of each of the grid items.</p>
+                            <pre>&lt;div&gt;&lt;img src="img/forest.jpg"/&gt;&lt;/div&gt;</pre>
+                            <p>To make the image fit into the item, we’ll set the it to be as wide and tall as the item itself, and then use <code>object-fit: cover;</code>. This will make the image cover its entire container, and the browser will crop it if it’s needed.</p>
+                            <pre>.container &gt; div &gt; img {<br>    width: 100%;<br>    height: 100%;<br>    object-fit: cover;<br>}</pre>
+                            <p>Which ends up like the following:</p>
+                            <figure class="inset-column__figure">
+                                <img class="inset-column__gif2" src="https://cdn-images-1.medium.com/max/800/1*jCNANupl0ECRzF6cOLuWNw.gif">
                             </figure>
-                            <p class="inset-column__graf--p after__figure">And that’s it! You now know one of the most complex concepts in CSS Grid, so give yourself a pat on the back.</p>
-                            <h4 class="inset-column__graf--h4 after__p">Browser support</h4>
-                            <p class="inset-column__graf--p after__h4">Before we end, I also need to mention browser support. At the time of writing this article, <a href="https://caniuse.com/#feat=css-grid">77% of global website traffic supports CSS Grid</a>, and it’s climbing.</p>
-                            <p class="inset-column__graf--p after__p">I believe 2018 will be the year of CSS Grid. It’ll get its break-through, and will turn into a must-have skill for front-end developers. Much like what has happened with CSS Flexbox the last couple of years.</p>
-                            <blockquote class="inset-column__graf--pullquote after__p">If you want to learn CSS Grid properly, simply <a href="http://eepurl.com/c_R31n">leave your email here</a> and I’ll give you early access to my free course when it’s&nbsp;ready.</blockquote>
-                            <p class="inset-column__graf--p after__pullquote graf--trailing">Alternatively, check out the <a href="https://scrimba.com/p/pRB9Hw/c2gd3T2">preview of the course.</a></p>
+                            <p>And that’s it! You now know one of the most complex concepts in CSS Grid, so give yourself a pat on the back.</p>
+                            <h4>Browser support</h4>
+                            <p>Before we end, I also need to mention browser support. At the time of writing this article, <a href="https://caniuse.com/#feat=css-grid">77% of global website traffic supports CSS Grid</a>, and it’s climbing.</p>
+                            <p>I believe 2018 will be the year of CSS Grid. It’ll get its break-through, and will turn into a must-have skill for front-end developers. Much like what has happened with CSS Flexbox the last couple of years.</p>
+                            <blockquote class="inset-column__pullquote">If you want to learn CSS Grid properly, simply <a href="http://eepurl.com/c_R31n">leave your email here</a> and I’ll give you early access to my free course when it’s&nbsp;ready.</blockquote>
+                            <p>Alternatively, check out the <a href="https://scrimba.com/p/pRB9Hw/c2gd3T2">preview of the course.</a></p>
                         </div>
                     </div>
                 </section>
                 <section class="last-section">
                     <hr class="section-divider">
                     <div class="section-content">
-                        <div class="section-content__inset-column section-inner">
-                            <p class="inset-column__graf--leading graf--trailing">Thanks for reading! My name is Per, I’m the co-founder of <a href="http://scrimba.com">Scrimba</a>, a tool for creating interactive coding screencasts. Follow me on <a href="https://twitter.com/perborgen">Twitter</a> and <a href="https://www.instagram.com/perborgen/">Instagram</a> if you want to keep in touch.</p>
+                        <div class="section-content__inset-column">
+                            <p class="inset-column__leading">Thanks for reading! My name is Per, I’m the co-founder of <a href="http://scrimba.com">Scrimba</a>, a tool for creating interactive coding screencasts. Follow me on <a href="https://twitter.com/perborgen">Twitter</a> and <a href="https://www.instagram.com/perborgen/">Instagram</a> if you want to keep in touch.</p>
                         </div>
                     </div>
                 </section>

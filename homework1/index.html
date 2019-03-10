@@ -1,201 +1,215 @@
-<!DOCTYPE html>
-<html>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Homepage</title>
-</head>
-
-<body>
-
-    <header class="header">
-        <nav class="nav">
-            <div class="metabar">
-                <div class="metabar__home-icon">
-                    <a href="https://medium.com/">
-                        <svg class="svgIcon-use" width="45" height="45"><path d="M5 40V5h35v35H5zm8.56-12.627c0 .555-.027.687-.318 1.03l-2.457 2.985v.396h6.974v-.396l-2.456-2.985c-.291-.343-.344-.502-.344-1.03V18.42l6.127 13.364h.714l5.256-13.364v10.644c0 .29 0 .342-.185.528l-1.848 1.796v.396h9.19v-.396l-1.822-1.796c-.184-.186-.21-.238-.21-.528V15.937c0-.291.026-.344.21-.528l1.823-1.797v-.396h-6.471l-4.622 11.542-5.203-11.542h-6.79v.396l2.14 2.64c.239.292.291.37.291.768v10.353z"></path></svg>
-                    </a>
-                </div>
-                <div class="freeCodeCamp">
-                    <a href="https://medium.freecodecamp.org?source=logo-lo_iWIHou9juMha---336d898217ee">
-                        <img height="36" width="300" src="https://cdn-images-1.medium.com/letterbox/300/36/50/50/1*wViBNJ1o9rM5p6b-gf3vxg.png?source=logoAvatar-lo_iWIHou9juMha---336d898217ee" alt="freeCodeCamp.org">
-                    </a>
-                </div>
-                <button class="follow-btn">
-                    Follow
-                </button>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <header>   
+          <div class="some-element"></div>
+          <div class="some-other-element"></div>
+          <nav class="nav"><a href="#"> <img src="./media/logo.svg" alt=""/></a><a href="#" id="features">Features</a><a href="#" id="pricing">Pricing</a><a href="#" id="pages">Pages </a><a href="#" id="help">?</a></nav>
+        </header>
+        <div class="content">
+          <div class="introduction">
+            <h1>Start. Design. Publish!</h1>
+            <p>Millions of people trust xPider to create beautiful websites.</p>
+            <div class="btn start-free-trial">Start Free Trial</div>
+          </div>
+          <div class="video-preview"></div>
+        </div>
+      </header>
+      <section class="section1">
+        <header>
+          <h3 class="section__h3">xPider  brings all your creativity together</h3>
+          <p class="section__p--when-u-need">When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.</p>
+        </header>
+        <div class="wrapper">
+          <div class="item choosed"><img src="./media/ic/drag.svg" alt=""/>
+            <h5 class="section__h5">AI Page Builder</h5>
+          </div>
+          <div class="item"><img src="./media/ic/settings.svg" alt=""/>
+            <h5 class="section__h5">Easy to Customize</h5>
+          </div>
+          <div class="item"><img src="./media/ic/responsive.svg" alt=""/>
+            <h5 class="section__h5">Fits with Any Device</h5>
+          </div>
+        </div>
+        <div class="page-builder"><img class="dot-grid-3" src="./media/il/dot-grid-3.svg" alt=""/>
+          <div class="build-anything"></div><img class="triangle" src="./media/il/triangle.svg" alt=""/>
+          <div class="description">
+            <h4>Build anything, anytime!</h4>
+            <ul>
+              <li>Your users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and functional. By a strong concept is what we stand for.</li>
+              <li>They're probably distracted too. Keep it simple & clean, fun and functional. Clean aesthetics supported.</li>
+            </ul>
+            <blockquote author="James Duren, CTO, Fish&amp;co">“Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”</blockquote>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <main>
+          <header>
+            <h3 class="section__h3">How xPider works for you?</h3>
+            <p class="section__p--when-u-need">When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.</p>
+          </header>
+          <div class="wrapper">
+            <div class="item">
+              <div class="wrapper-inner">
+                <div class="img img1"></div>
+                <h5 class="section__h5">Get started with xPider</h5>
+                <p>Login or Signup in xPider Dashboard to get started.</p>
+              </div>
+            </div><img src="./media/ic/arrow.svg" alt=""/>
+            <div class="item">
+              <div class="wrapper-inner">
+                <div class="img img2"></div>
+                <h5 class="section__h5">Build your website</h5>
+                <p>Using our super powerful builder, build your website.</p>
+              </div>
+            </div><img src="./media/ic/arrow.svg" alt=""/>
+            <div class="item">
+              <div class="wrapper-inner">
+                <div class="img img3"></div>
+                <h5 class="section__h5">Publish when finsihed</h5>
+                <p>When you are done, hit the publish button to show the world!</p>
+              </div>
             </div>
-            <div class="authorization">
-                <button class="authorization__signin-btn">
-                    Sign in
-                </button>
-                <button class="authorization__signup-btn">
-                    Get started
-                </button>
+          </div>
+        </main>
+      </section>
+      <section class="section3">
+        <main>
+          <div class="img--build-with"></div>
+          <div class="container">
+            <h4>Built for growth</h4>
+            <p>Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.</p><img src="./media/ic/html.png" alt=""/><img src="./media/ic/css.png" alt=""/><img src="./media/ic/js.png" alt=""/>
+            <p>Big, small, online, offline, local or international. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups. Check out some of our favorites.</p><a href="#">Try xPider now</a>
+          </div>
+        </main>
+      </section>
+      <section class="section4">
+        <div class="circle"></div>
+        <div class="unique-blocks"></div>
+        <div class="container">
+          <h4>1500+ Unique Blocks</h4>
+          <p>Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.</p><a href="">See all blocks live</a>
+        </div>
+      </section>
+      <section class="section5">
+        <main>
+          <div class="dot-grid2"></div>
+          <div class="wave"></div>
+          <header>
+            <h3 class="section__h3">You’re in a good hand</h3>
+            <p class="section__p--when-u-need"> Millions of people around the world have already made xPider the place where their dream happens.</p>
+          </header>
+          <div class="container">
+            <div class="item">
+              <p>Life before Company was very chaotic — we got a lot of phone calls, a lot of mistyped orders. So with Company, the ability to see the order directly from the customer makes it so streamlined.</p>
+              <div class="img" person="Martin Jones, Creative Cons"></div>
             </div>
-            <div class="navbar">
-                <a href=""class="navbar__home">Home</a>
-                <a href=""> Dev</a>
-                <div class="navbar__learntocode">
-                    <a href="">Learn to code for free</a>
-                </div>
-                <svg class="svgIcon-use" width="25" height="25" id="search">
-                    <path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path>
-                </svg>
+            <div class="item">
+              <p>There’s no way we could have hired these many people and gotten so much business had we not had all of those back-office systems figured out. It’s been easier growing our company with a system that is so easy and scalable.</p>
+              <div class="img" person="Jessia Cordon, Fashionier"></div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <article class="post-article--full">
-            <div class="post-article__content">
-                <section class="first-section">
-                    <div class="section-content">
-                        <header class="section-content-header">
-                            <h1 class="section-content-header__h1">How to make your HTML responsive by adding a single line of CSS</h1>
-                            <div class="section-content-header__author">
-                                <div class="section-content-header__first">
-                                    <a href="https://medium.freecodecamp.org/@perborgen?source=post_header_lockup">
-                                        <img src="https://cdn-images-1.medium.com/fit/c/50/50/0*EdUYcQhX6TPWdQ6p.jpg" class="section-content-header__avatar-image" alt="Go to the profile of Per Harald Borgen">
-                                        <div class="section-content-header__avatar-halo" >
-                                            <svg width="60" height="60"viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.53538374,19.9430227 C11.180401,8.78497536 22.6271155,1.6 35.3571429,1.6 C48.0871702,1.6 59.5338847,8.78497536 65.178902,19.9430227 L66.2496695,19.401306 C60.4023065,7.84329843 48.5440457,0.4 35.3571429,0.4 C22.17024,0.4 10.3119792,7.84329843 4.46461626,19.401306 L5.53538374,19.9430227 Z">
-                                                </path>
-                                                <path d="M65.178902,49.9077131 C59.5338847,61.0657604 48.0871702,68.2507358 35.3571429,68.2507358 C22.6271155,68.2507358 11.180401,61.0657604 5.53538374,49.9077131 L4.46461626,50.4494298 C10.3119792,62.0074373 22.17024,69.4507358 35.3571429,69.4507358 C48.5440457,69.4507358 60.4023065,62.0074373 66.2496695,50.4494298 L65.178902,49.9077131 Z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="section-content-header__second">
-                                    <a class="a--black" href="https://medium.freecodecamp.org/@perborgen">Per Harald Borgen</a>
-                                    <div class="section-content--author__follow-btn">
-                                        <button class="follow-btn btn--dark">
-                                            Follow
-                                        </button>
-                                    </div>
-                                    <div class="section-content--author__caption">
-                                        <time datetime="2017-12-08T05:37:03.525Z">
-                                            Dec 8, 2017
-                                        </time>
-                                        <span class="middot-divider">
-                                        </span>
-                                        <span class="reading-time" title="6 min read">
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </header>
-                        <figure class="section-content__figure">
-                            <img src="https://cdn-images-1.medium.com/max/1000/1*Bx0gNW69lAXaSRqRw0_8dw.jpeg">
-                            <figcaption>
-                                Photo by <a href="https://medium.com/@tjholowaychuk">TJ Holowaychuk</a>
-                            </figcaption>
-                        </figure>
-                        <div class="section-content__inset-column">
-                            <p>In this article I’ll teach you how to use CSS Grid to create a super cool image grid which varies the amount of columns with the width of the screen.</p>
-                            <p>And the most beautiful part:<strong> the responsiveness will be added with a single line of CSS.</strong></p>
-                            <p>This means we don’t have to clutter up the HTML with ugly class names (i.e. <code>col-sm-4</code>, <code>col-md-8</code>) or create media queries for every single screen size.</p>
-                            <blockquote class="inset-column__pullquote">
-                                I’ve also created a free CSS Grid course. 
-                                <a href="https://scrimba.com/g/gR8PTE">Click here to get full access to&nbsp;it.</a>
-                            </blockquote>
-                            <figure class="inset-column__figure">
-                                <a href="https://scrimba.com/g/gR8PTE">
-                                    <img class="inset-column__img1" src="https://cdn-images-1.medium.com/max/800/1*OKboVzVnQKyPQJT4MyddYQ.png">
-                                </a>
-                                <figcaption>Click the image to get to the&nbsp;course.</figcaption>
-                            </figure>
-                            <p>Now let’s jump into it!</p>
-                            <h3>The setup</h3>
-                            <p>For this article, we’ll continue on with the grid we used in <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">my first CSS Grid article.</a> Then we’ll add the images at the end of the article. Here’s how our initial grid looks:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
-                            </figure>
-                            <p>Here’s the HTML:</p>
-                            <pre>&lt;div class="container"&gt;<br>  &lt;div&gt;1&lt;/div&gt;<br>  &lt;div&gt;2&lt;/div&gt;<br>  &lt;div&gt;3&lt;/div&gt;<br>  &lt;div&gt;4&lt;/div&gt;<br>  &lt;div&gt;5&lt;/div&gt;<br>  &lt;div&gt;6&lt;/div&gt;<br>&lt;/div&gt;</pre>
-                            <p>And the CSS:</p>
-                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: 100px 100px 100px;<br>    grid-template-rows: 50px 50px;<br>}</pre>
-                            <blockquote class="inset-column__blockquote">
-                                Note: the example also has a little bit of basic styling, which I won’t go into here, as it’s got nothing to do with CSS Grid.
-                            </blockquote>
-                            <p>
-                                If this code confuses you, I’d recommend you to read my <a href="https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228">Learn CSS Grid in 5 minutes</a> article, where I explain the basics of the layout module.</p>
-                            <p>Let’s start by making the columns responsive.</p>
-                            <h3>Basic responsiveness with the fraction&nbsp;unit</h3>
-                            <p>CSS Grid brings with it a whole new value called a fraction unit. The fraction unit is written like <code>fr</code>, and it allows you to split the container into as many fractions as you want.</p>
-                            <p>Let’s change each of the columns to be one fraction unit wide.</p>
-                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: 1fr 1fr 1fr;<br>    grid-template-rows: 50px 50px;<br>}</pre>
-                            <p>What happens here is that the grid splits the entire width into three fractions and each of the columns take up one unit each. Here is the result:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*JgGPqT2AfFNDD8DhG2wPdQ.gif">
-                            </figure>
-                            <p>
-                                If we change the <code>grid-template-columns</code> value to<code>1fr 2fr 1fr</code>, the second column will now be twice as wide as the two other columns. The total width is now four fraction units, and the second one takes up two of them, while the others take up one each. Here’s how that looks:
-                            </p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*cpfokc1HBgCwOTNhRU9SHg.gif">
-                            </figure>
-                            <p>In other words, the fraction unit value makes it super easy for you to change the width of the columns.</p>
-                            <h3>Advanced responsiveness</h3>
-                            <p>However, the example above doesn’t give us the responsiveness we want, as this grid will always be three columns wide. We want our grid to vary the amount of columns with the width of the container. To achieve that, you’ll have to learn three new concepts.</p>
-                            <h4>repeat()</h4>
-                            <p>We’ll start with the <code>repeat()</code> function. This is a more powerful way of specifying your columns and rows. Let’s take our original grid and change it to using repeat():</p>
-                            <pre>.container {<br>    display: grid;<br>    grid-template-columns: repeat(3, 100px);<br>    grid-template-rows: repeat(2, 50px);<br>}</pre>
-                            <p>In other words, <code>repeat(3, 100px)</code> is identical to <code>100px 100px 100px</code>. The first parameter specified how many columns or rows you want, and the second specifies their width, so this will just give us the exact same layout as we started out with:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__img2" src="https://cdn-images-1.medium.com/max/800/1*fJNIdDiScjhI9CZjdxv3Eg.png">
-                            </figure>
-                            <h4>auto-fit</h4>
-                            <p>Then there’s auto-fit. Let’s skip having a fixed amount of columns, and rather replace 3 with <code>auto-fit</code>.</p>
-                            <pre>.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, 100px);<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
-                            <p>This results in the following behaviour:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*vLZ9RD3dt0Q3hCieYfRuMg.gif">
-                            </figure>
-                            <p>The grid now varies the amount of columns with the width of the container.</p>
-                            <blockquote class="inset-column__pullquote">It simply tries to fit as many 100px wide columns into the container as possible.</blockquote>
-                            <p>However, if we hard code all columns to be exactly 100px, we’ll never get the flexibility we want, as they’ll rarely add up to the full width. As you can see on the gif above, the grid often leaves white space on the right hand side.</p>
-                            <h4>minmax()</h4>
-                            <p>The final ingredient we need in order to fix this is called <code>minmax()</code>. We’ll simply replace 100px with <code>minmax(100px, 1fr)</code>. Here’s the final CSS.</p>
-                            <pre>.container {<br>    display: grid;<br>    grid-gap: 5px;<br><strong>    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));<br></strong>    grid-template-rows: repeat(2, 100px);<br>}</pre>
-                            <blockquote class="inset-column__pullquote">Notice that all the responsiveness happens in a single line of&nbsp;CSS.</blockquote>
-                            <p>This results in the following behavior:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__gif" src="https://cdn-images-1.medium.com/max/800/1*1FOrkyNbaabo3_LJxcdDbg.gif">
-                            </figure>
-                            <p>And as you can see that works perfectly. <span class="__quote">The <code>minmax()</code> function defines a size range greater than or equal to <strong>min</strong> and less than or equal to max.</span></p>
-                            <p>So the columns will now always be at least 100px. However if there are more available space, the grid will simply distribute this equally to each of the columns, as the columns turn into a fraction unit instead of 100 px.</p>
-                            <h4>Adding the&nbsp;images</h4>
-                            <p>Now the final step is to add the images. This has nothing to do with CSS Grid, but let’s still look at the code.</p>
-                            <p>We’ll start off by adding an image tag inside of each of the grid items.</p>
-                            <pre>&lt;div&gt;&lt;img src="img/forest.jpg"/&gt;&lt;/div&gt;</pre>
-                            <p>To make the image fit into the item, we’ll set the it to be as wide and tall as the item itself, and then use <code>object-fit: cover;</code>. This will make the image cover its entire container, and the browser will crop it if it’s needed.</p>
-                            <pre>.container &gt; div &gt; img {<br>    width: 100%;<br>    height: 100%;<br>    object-fit: cover;<br>}</pre>
-                            <p>Which ends up like the following:</p>
-                            <figure class="inset-column__figure">
-                                <img class="inset-column__gif2" src="https://cdn-images-1.medium.com/max/800/1*jCNANupl0ECRzF6cOLuWNw.gif">
-                            </figure>
-                            <p>And that’s it! You now know one of the most complex concepts in CSS Grid, so give yourself a pat on the back.</p>
-                            <h4>Browser support</h4>
-                            <p>Before we end, I also need to mention browser support. At the time of writing this article, <a href="https://caniuse.com/#feat=css-grid">77% of global website traffic supports CSS Grid</a>, and it’s climbing.</p>
-                            <p>I believe 2018 will be the year of CSS Grid. It’ll get its break-through, and will turn into a must-have skill for front-end developers. Much like what has happened with CSS Flexbox the last couple of years.</p>
-                            <blockquote class="inset-column__pullquote">If you want to learn CSS Grid properly, simply <a href="http://eepurl.com/c_R31n">leave your email here</a> and I’ll give you early access to my free course when it’s&nbsp;ready.</blockquote>
-                            <p>Alternatively, check out the <a href="https://scrimba.com/p/pRB9Hw/c2gd3T2">preview of the course.</a></p>
-                        </div>
-                    </div>
-                </section>
-                <section class="last-section">
-                    <hr class="section-divider">
-                    <div class="section-content">
-                        <div class="section-content__inset-column">
-                            <p class="inset-column__leading">Thanks for reading! My name is Per, I’m the co-founder of <a href="http://scrimba.com">Scrimba</a>, a tool for creating interactive coding screencasts. Follow me on <a href="https://twitter.com/perborgen">Twitter</a> and <a href="https://www.instagram.com/perborgen/">Instagram</a> if you want to keep in touch.</p>
-                        </div>
-                    </div>
-                </section>
+            <div class="item">
+              <p>Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!</p>
+              <div class="img" person="Cristina J, Journey360"></div>
             </div>
-        </article>
+          </div><a href="#">Check all testimonials ?</a>
+          <footer><img src="./media/brands/logo - 1.png" alt=""/><img src="./media/brands/logo - 2.png" alt=""/><img src="./media/brands/logo - 3.png" alt=""/><img src="./media/brands/logo - 4.png" alt=""/><img src="./media/brands/logo - 5.png" alt=""/></footer>
+        </main>
+      </section>
+      <section class="section6">
+        <header>
+          <h3 class="section__h3">Simple, Straight Pricing</h3>
+          <p class="section__p--when-u-need">Millions of people around the world have already made xPider the place where their dream happens.</p>
+        </header>
+        <main>
+          <div class="dot-grid-1"></div>
+          <div class="dot-grid-4"></div>
+          <div class="container">
+            <div class="container__card card1">
+              <div class="price"> 
+                <div class="value">$19</div>
+                <h6>Billed Monthly</h6>
+              </div>
+              <div class="description">
+                <p>No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.</p>
+                <div class="btn">Try 14 days free trial</div>
+              </div>
+            </div>
+            <div class="container__card card2">
+              <div class="price"> 
+                <div class="value">$9</div>
+                <h6>Billed Anually</h6>
+              </div>
+              <div class="description">
+                <p>No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.</p>
+                <div class="btn">Try 14 days free trial</div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <p>Both pricings contains all of our features.</p><a href="#">Check all our features ?</a>
+        </footer>
+      </section>
+      <section class="section7">
+        <header>
+          <h3 class="section__h3">Try xPider for 14 days, for free!</h3>
+          <p class="section__p--when-u-need">Millions of people around the world have already made xPider the place where their dream happens.</p>
+        </header>
+        <main>
+          <div class="some-item1"></div>
+          <div class="some-item2"></div>
+          <div class="some-item3"></div>
+          <div class="btn--get-started">Get started</div>
+        </main>
+      </section>
+      <footer class="footer">
+        <div class="big-gray-web"></div>
+        <main>
+          <div class="web"></div>
+          <ul>Company
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Brand Guidelines</a></li>
+          </ul>
+          <ul>Product
+            <li><a href="#">Why xPider?</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Customer Stories</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+          <ul>Resources
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </main>
+        <footer>
+          <div class="wrapper">
+            <div class="wrapper-inner"><a href="#">Status</a><a href="#">Privacy & Terms</a><a href="#">Contact Us</a></div>
+            <div class="wrapper-inner">
+              <div class="language"><img class="flag" src="./media/flags/us.png" alt=""/><span class="language">English ?</span></div>
+              <div class="socials"><span class="social" id="facebook"></span><span class="social" id="twitter"></span><span class="social" id="dribbble"></span></div>
+            </div>
+          </div>
+        </footer>
+      </footer>
     </main>
-</body>
-
+  </body>
 </html>

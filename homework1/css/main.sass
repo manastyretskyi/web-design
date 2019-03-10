@@ -1,0 +1,885 @@
+@font-face 
+    font-family: LastResort
+    src: url(../fonts/LastResort.woff) format(woff)
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-BlackItalic.woff2)
+    font-weight: 900
+    font-style: italic
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-Black.woff2)
+    font-weight: 900
+    
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-BoldItalic.woff2)
+    font-weight: bold
+    font-style: italic
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-Bold.woff2)
+    font-weight: bold
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-LightItalic.woff2)
+    font-weight: 300
+    font-style: italic
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-Regular.woff2)
+    
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-SemiBoldItalic.woff2)
+    font-weight: 600
+    font-style: italic
+
+@font-face 
+    font-family: Aileron
+    src: url(../fonts/Aileron-SemiBold.woff2)
+    font-weight: 600
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote 
+    margin: 0
+
+body
+    font-family: Aileron, LastResort, 'Times New Roman', Times, serif
+    #bg
+        position: absolute
+        top: 0
+        left: 0
+        max-width: 100%
+        max-height: 100%
+        z-index: -9999
+    
+.main
+    .header
+        overflow: hidden
+        padding-bottom: 220px
+        header
+            position: relative
+            max-width: 1105px
+            width: 100%
+            margin: auto
+            padding-top: 10px
+
+            .some-element
+                position: absolute
+                top: -1000px
+                left: -515px
+                height: 1500px
+                width: 1500px
+                background-color: rgb(246, 248, 249)
+                border-bottom-left-radius: 165px
+                transform: rotateZ(-33deg)
+                z-index: -2
+
+            .some-other-element
+                position: absolute
+                top: -550px
+                right: -955px
+                width: 1100px
+                height: 1100px
+                border-radius: 75px
+                background-color: rgba(47,91,234,1)
+                transform: rotateZ(41deg)
+                z-index: -1
+
+            .nav 
+                display: flex
+                align-items: center
+                margin-top: 25px
+                a
+                    color: #7E8085
+                    text-align: left
+                    font-size: 17px
+                    line-height: 18px
+                    text-decoration: none
+
+                a#features
+                    padding-left: 50px
+
+                a#pricing
+                    padding-left: 43px
+
+                a#pages
+                    padding-left: 45px
+
+                a#help
+                    padding-left: 20px
+
+        .content
+            margin: auto
+            display: flex
+            max-width: 1105px
+            width: 100%
+            .introduction
+                margin-top: 145px
+                margin-right: auto
+                h1  
+                    margin-top: 32px
+                    text-transform: uppercase
+                    width: 280px	
+                    color: #2C2E30	
+                    font-size: 48px	
+                    font-weight: 900	
+                    line-height: 58px
+                
+                h1 + p
+                    margin-top: 16px
+                    height: 73px	
+                    width: 360px	
+                    color: #7E8085	
+                    font-family: Aileron	
+                    font-size: 21px	
+                    line-height: 34px
+                .btn
+                    cursor: pointer
+                    height: 55px	
+                    width: 205px
+                    background-color: #2F5BEA
+                    margin-top: 25px
+                    border-radius: 25px
+
+                .start-free-trial
+                    text-transform: uppercase
+                    color: #FFFFFF
+                    font-family: Aileron
+                    font-size: 16px
+                    font-weight: bold
+                    line-height: 58px
+                    text-align: center   
+            .video-preview
+                background: url(../media/video-preview@2x.png) no-repeat
+                background-size: cover
+                cursor: pointer
+                display: block
+                box-shadow: 0px 0px 30px rgba(0,0,0,.2)
+                max-width: 650px
+                max-height: 445px
+                width: 100%
+                height: 100%
+                position: relative
+                top: 115px
+                right: -4px
+
+            .video-preview::before
+                background: url(../media/ic/play.svg) no-repeat center center
+                height: 120px
+                width: 120px
+                border-radius: 50%
+                box-shadow: 0px 10px 30px rgba(0,0,0,.1)
+                background-color: #f1544b //rgba(252,92,66,1)
+                content: ""
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: 4
+
+    .section1
+        header
+            margin: auto
+            width: 836px
+        display: flex
+        align-items: center
+        flex-direction: column
+        max-width: 1105px
+        width: 100%
+        margin: auto
+        
+        .wrapper
+            width: 920px
+            margin-top: 75px
+            margin-left: auto
+            margin-right: auto
+            display: flex
+            justify-content: space-between
+            position: relative
+            flex-wrap: wrap
+
+            .choosed
+                border-bottom: 3px solid #2c61e2
+
+            .item
+                display: flex
+                flex-direction: column
+                align-items: center
+                max-width: 200px
+                width: 100%
+                padding-bottom: 26px
+
+        .wrapper::after
+            position: absolute
+            bottom: 0px
+            // flex-grow: 1
+            content: ''
+            width: 100%
+            border-bottom: 3px solid #e6e9ed
+            z-index: -1
+
+        .page-builder
+            margin-top: 54px
+            width: 100%
+            position: relative
+            display: flex
+            flex-direction: row-reverse
+            .dot-grid-3
+                position: absolute
+                left: -77px
+                top: -16px
+                z-index: -1
+            .build-anything
+                position: absolute
+                background: url(../media/build-anything@2x.png) no-repeat
+                background-size: cover
+                width: 548px
+                // width: 100%
+                left: -28px
+                height: 520px
+                // height: 100%
+            .triangle
+                position: absolute
+                top: 470px
+                left: 400px
+                z-index: -1
+            .description
+                width: 530px
+                h4
+                    margin-left: 20px
+                    margin-top: 45px
+                    height: 41px
+                    color: rgba(44,46,48,1)
+                    font-size: 28px
+                    font-weight: bold
+                    line-height: 41px
+                ul
+                    list-style-image: url(../media/ul-dot.png)
+                    margin-top: 35px
+                    // margin-left: 70px
+                    li
+                        padding-left: 10px
+                        color: rgba(84,86,90,1)
+                        font-size: 16px
+                        line-height: 28px
+                    li + li
+                        padding-top: 20px
+                blockquote
+                    margin-left: 22px
+                    margin-right: 22px
+                    margin-top: 32px
+                    padding-top: 25px
+                    color: rgba(84,86,90,1)
+                    font-family: "Noto Serif"
+                    font-size: 16px
+                    font-style: italic
+                    line-height: 28px
+                    border-top: 1px solid #e6e9ed
+
+                blockquote::after
+                    margin-top: 20px
+                    content: attr(author)
+                    display: block
+                    font-style: normal
+                    color: rgba(44,46,48,1)
+                    font-family: Aileron
+                    font-size: 16px
+                    font-weight: 600
+                    line-height: 20px
+
+    .section2
+        margin-top: 208px
+        background-color: rgba(246,248,249,1)
+        main
+            header
+                margin: auto
+                width: 836px
+            max-width: 1105px
+            width: 100%
+            margin: auto
+            padding-top: 143px
+            padding-bottom: 130px
+            border-bottom: 1px solid rgba(232,235,239,1)
+            .wrapper
+                img
+                    height: 100px
+                    margin-top: 55px
+                margin-top: 77px
+                display: flex
+                width: 100%
+                .item
+                    display: flex
+                    margin-left: 36.5px
+                    margin-right: 36.5px
+                    .wrapper-inner
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: 275px
+                        .img
+                            border: 4px dotted rgba(198,203,215,1)
+                            padding: 5px
+                            width: 100px
+                            height: 100px
+                            border-radius: 50%
+
+                        .img1::before
+                            content: ""
+                            background: url(../media/ic/pin.svg) no-repeat center center
+
+                        .img2::before
+                            content: ""
+                            background: url(../media/ic/layout.svg) no-repeat center center
+
+                        .img3::before
+                            content: ""
+                            background: url(../media/ic/spaceship.svg) no-repeat center center
+
+                        .img::before
+                            width: 100%
+                            height: 100%
+                            display: block
+                            border-radius: 50%
+                            background-color: rgba(84,95,117,1)
+
+                        h5.section__h5
+                            margin-top: 25px
+                        p
+                            margin-top: 10px
+                            color: rgba(126,128,133,1)
+                            font-size: 16px
+                            line-height: 28px
+                            text-align: center
+
+    .section3
+        padding-bottom: 165px
+        background-color: rgba(246,248,249,1)
+        main
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            padding-top: 150px
+            max-width: 1105px
+            width: 100%
+            margin: auto    
+            position: relative
+            .img--build-with
+                position: absolute
+                top: 140px
+                left: -128px
+                width: 686px
+                height: 431px
+                background: url(../media/built-for-growth@2x.png) no-repeat
+                background-size: cover
+            .container
+                width: 400px
+                h4
+                    margin-top: 38px
+                    color: rgba(44,46,48,1)
+                    font-size: 34px
+                    font-weight: bold
+                    line-height: 41px
+                p
+                    width: 420px
+                    color: rgba(84,86,90,1)
+                    font-size: 16px
+                    line-height: 28px
+                h4 + p 
+                    margin-top: 40px
+                img
+                    margin-top: 25px
+                img + img 
+                    margin-left: 17px
+                img + p 
+                    margin-top: 27px
+                a
+                    display: block
+                    margin-top: 32px
+                    color: rgba(47,91,234,1)
+                    font-size: 18px
+                    font-weight: bold
+                    line-height: 34px
+    
+    .section4
+        padding-bottom: 225px
+        padding-top: 180px
+        position: relative
+        .circle
+            top: -345px
+            left: 385px
+            position: absolute
+            border-radius: 50%
+            border: 5px solid #f6f8f9
+            width: 700px
+            height: 700px
+            z-index: -1
+        .unique-blocks
+            position: absolute
+            top: 170px
+            right: 372px
+            width: 600px
+            height: 442px
+            background: url(../media/unique-blocks@2x.png) no-repeat
+            background-size: cover
+            z-index: -1
+
+        .container
+            max-width: 1105px
+            width: 100%
+            margin: auto
+            h4
+                margin-top: 38px
+                color: rgba(44,46,48,1)
+                font-size: 34px
+                font-weight: bold
+                line-height: 41px
+            p
+                width: 420px
+                color: rgba(84,86,90,1)
+                font-size: 16px
+                line-height: 28px
+            h4 + p 
+                margin-top: 40px
+            img
+                margin-top: 25px
+            img + img 
+                margin-left: 17px
+            img + p 
+                margin-top: 27px
+            a
+                display: block
+                margin-top: 54px // !!!!!!!!!!!!!!
+                color: rgba(47,91,234,1)
+                font-size: 18px
+                font-weight: bold
+                line-height: 34px
+
+    .section5
+        padding-bottom: 135px
+        main
+            position: relative
+            max-width: 1105px
+            width: 100%
+            margin: auto
+
+            .dot-grid2
+                position: absolute
+                background: url(../media/il/dot-grid-2.svg) no-repeat
+                background-size: cover
+                width: 158px
+                height: 73px
+                top: 167px
+                left: -90px
+                z-index: -1
+            .wave
+                position: absolute
+                background: url(../media/il/wave.svg) no-repeat
+                background-size: cover
+                width: 69px
+                height: 56px
+                top: 370px
+                right: -40px
+                z-index: -1
+
+            header
+                width: 550px
+                margin: auto
+
+            .container
+                display: flex
+                justify-content: space-around
+                padding-top: 65px
+                .item
+                    display: flex
+                    // flex-direction: column
+                    align-content: space-between
+                    background: #fff
+                    box-sizing: border-box
+                    flex-wrap: wrap
+                    padding-top: 10px
+                    padding-left: 10px
+                    padding-bottom: 12px
+                    padding-right: 30px
+                    border: 1px solid rgba(237,239,242,1)
+                    border-radius: 5px
+                    box-shadow: 0px 3px 5px rgba(0,0,0,.1)
+                    width: 355px
+                    p
+                        flex-basis: 100%
+                        width: 320px
+                        color: rgba(126,128,133,1)
+                        font-family: "Noto Serif"
+                        font-size: 16px
+                        font-style: italic
+                        line-height: 28px
+                    .img
+                        margin-top: 40px
+                        flex-basis: 100%
+                        display: flex
+                    .img::before
+                        content: ""
+                        display: block
+                        background: #000
+                        width: 30px
+                        height: 30px
+                        border-radius: 50%
+
+                    .img::after
+                        margin-top: 3px
+                        margin-left: 12px
+                        content: attr(person)
+                        display: block
+                        color: rgba(44,46,48,1)
+                        font-size: 16px
+                        font-weight: 600
+                        line-height: 20px
+
+            a
+                padding-top: 39px
+                display: block
+                margin: auto
+                font-weight: bold
+                color: rgba(47,91,234,1)
+                font-size: 18px
+                line-height: 34px
+                text-align: center
+
+            footer
+                margin-top: 115px
+                width: 950px
+                margin-left: auto
+                margin-right: auto
+                display: flex
+                justify-content: space-around
+                align-items: center
+
+    .section6
+        padding-top: 122px
+        padding-bottom: 125px
+        // z-index: -999
+        background-color: #f5f8f9
+        header
+            margin: auto
+            width: 550px
+        main
+            margin: auto
+            width: 1105px
+            position: relative
+
+            .dot-grid-1
+                top: 5px
+                left: 90px
+                position: absolute
+                width: 150px
+                height: 150px
+                background-color: #eff4f4
+                z-index: 2
+
+            .dot-grid-1::before
+                top: 35px
+                right: 27px
+                z-index: 1
+                position: absolute
+                background: url(../media/il/dot-grid.svg) no-repeat
+                background-size: cover
+                width: 158px
+                height: 153px
+                content: ""
+                display: block
+
+            .dot-grid-4
+                z-index: 1
+                top: 192px
+                right: 58px
+                position: absolute
+                background: url(../media/il/dot-grid-4.svg) no-repeat
+                background-size: cover
+                width: 214px
+                height: 214px
+
+            .container
+                justify-content: center
+                padding: 1px 1px 1px 1px
+                padding-top: 75px
+                margin: auto
+                display: flex
+                        
+                .container__card
+                    box-shadow: 0px 3px 5px rgba(0,0,0,.1)
+                    margin-left: 15px
+                    margin-right: 15px
+                    border-radius: 5px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    height: 425px	
+                    width: 378px
+                    z-index: 2
+
+                    .price
+                        width: 100%
+                        padding-top: 30px
+                        padding-bottom: 40px
+                        border-bottom: 1px solid rgba(0,0,0,.1)
+                        .value
+                            display: block
+                            font-family: "Noto Serif"
+                            font-size: 60px
+                            font-weight: bold
+                            line-height: 82px
+                            text-align: center
+                        h6
+                            display: block
+                            font-size: 18px
+                            font-weight: 600
+                            line-height: 22px
+                            text-align: center
+                        
+                    .description
+                        padding-top: 30px
+                        padding-left: 33px
+                        padding-right: 33px
+                        p
+                            font-size: 16px
+                            line-height: 28px
+                            text-align: center
+                        
+                        .btn
+                            text-transform: uppercase
+                            margin-top: 35px
+                            margin-left: auto
+                            margin-right: auto
+                            background-color: rgba(255,255,255,1)
+                            border: 1px solid rgba(0,0,0,.1)
+                            border-radius: 5px
+                            height: 55px
+                            width: 280px
+                            font-size: 16px
+                            font-weight: bold
+                            line-height: 55px
+                            text-align: center
+
+                .card1
+                    border: 1px solid rgba(0,0,0,.1)
+                    background-color: rgba(255,255,255,1)
+
+                    .price
+                        .value
+                            color: rgba(47,91,234,1)
+                        h6
+                            color: rgba(126,128,133,1)
+
+                    .description
+                        p
+                            color: rgba(126,128,133,1)
+                        .btn 
+                            color: rgba(84,86,90,1)
+                .card2
+                    background-color: rgba(47,91,234,1)
+                    border: 1px solid rgba(36,82,228,1)
+
+                    .price
+                        .value
+                            color: rgba(255,255,255,1)
+                        h6
+                            color: rgba(231,234,238,1)
+
+                    .description
+                        p
+                            color: rgba(231,234,238,1)
+                        .btn
+                            color: rgba(47,91,234,1)
+
+                
+        footer
+            width: 1105px
+            margin: auto
+            margin-top: 45px
+            p
+                color: rgba(126,128,133,1)
+                font-size: 18px
+                line-height: 34px
+                text-align: center
+
+            a
+                font-weight: bold
+                display: block
+                margin: auto
+                color: rgba(44,46,48,1)
+                font-size: 18px
+                line-height: 34px
+                text-align: center
+
+    .section7
+        padding-top: 110px
+        background-color: #2c61e2
+        padding-bottom: 135px
+        header
+            margin: auto
+            width: 550px
+            h3
+                color: rgba(255,255,255,1)
+            p
+                color: rgba(255,255,255,1)
+        main
+            width: 1105px
+            margin: auto
+            margin-top: 40px
+            position: relative
+            .some-item1
+                position: absolute
+                top: -345px
+                left: 340px
+                width: 100px
+                height: 100px
+                background-color: rgba(255,255,255,.1)
+                transform: rotateZ(60deg)
+                
+            .some-item2
+                position: absolute
+                top: -180px
+                left: 190px
+                width: 25px
+                height: 25px
+                border: 5px solid rgba(255,255,255,.1)
+                transform: rotateZ(15deg)
+
+            .some-item3
+                position: absolute
+                top: -20px
+                right: 280px
+                width: 25px
+                height: 25px
+                border-radius: 50%
+                border: 5px solid rgba(255,255,255,.1)
+
+
+            .btn--get-started
+                padding-top: 18px
+                padding-bottom: 18px
+                background-color: #fff
+                text-transform: uppercase
+                width: 180px
+                border-radius: 5px
+                margin: auto
+                color: rgba(47,91,234,1)
+                font-size: 16px
+                font-weight: bold
+                line-height: 20px
+                text-align: center
+
+    .footer
+        padding-top: 120px
+        padding-bottom: 65px
+        position: relative
+        main
+            display: flex
+            justify-content: flex-end
+            width: 1105px
+            margin: auto
+            position: relative
+            .web
+                left: 0
+                top: 25px
+                position: absolute
+                width: 47px
+                height: 41px
+                background: url(../media/logo-mark.svg)
+
+            li:first-child
+                margin-top: 22px
+            ul
+                padding-right: 110px
+                color: rgba(44,46,48,1)
+                font-size: 18px
+                font-weight: bold
+                line-height: 21px
+                list-style-type: none
+                li 
+                    a 
+                        font-weight: normal
+                        color: rgba(84,86,90,1)
+                        font-size: 16px
+                        line-height: 39px
+                        text-decoration: none
+        footer
+            display: flex
+            background: rgba(246,248,249,1)
+            margin-top: 130px
+            height: 75px
+            width: 100%
+            .wrapper
+                width: 1105px
+                margin: auto
+                display: flex
+                justify-content: space-between
+                .wrapper-inner
+                    display: flex
+                    a + a
+                        padding-left: 30px
+                    a
+                        text-decoration: none
+                        color: rgba(84,86,90,1)
+                        font-size: 14px
+                        font-weight: bold
+                        line-height: 17px
+
+                    span.language
+                        margin-left: 15px
+                        font-weight: bold
+                        color: rgba(84,86,90,1)
+                        font-size: 14px
+                        line-height: 17px
+                .socials
+                    margin-left: 30px
+                    .social
+                        margin-left: 6px
+                        display: inline-block
+                        width: 25px
+                        height: 25px
+                        background-color: rgba(81,84,94,1)!important
+                        border-radius: 50%
+
+                    #facebook
+                        background: url(../media/ic/socials/facebook.png) no-repeat center center
+                    #twitter
+                        background: url(../media/ic/socials/twitter.png) no-repeat center center
+                    #dribbble
+                        background: url(../media/ic/socials/dribbble.png) no-repeat center center
+        
+        .big-gray-web
+            top: 0
+            position: absolute
+            background: url(../media/logo-mark-bg.svg) no-repeat
+            width: 690px
+            height: 600px
+        
+h3.section__h3
+    color: rgba(44,46,48,1)
+    font-size: 34px
+    font-weight: bold
+    line-height: 41px
+    text-align: center
+
+p.section__p--when-u-need 
+    margin: auto
+    margin-top: 23px
+    color: rgba(126,128,133,1)
+    font-size: 18px
+    font-weight: 600
+    line-height: 34px
+    text-align: center
+
+h5.section__h5
+    margin-top: 12px
+    color: rgba(44,46,48,1)	
+    font-size: 21px	
+    font-weight: bold	
+    line-height: 25px	
+    text-align: center

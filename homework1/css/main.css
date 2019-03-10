@@ -1063,6 +1063,7 @@ body #bg {
 }
 
 .main .footer main .web {
+  z-index: -1;
   left: 0;
   top: 25px;
   position: absolute;
@@ -1165,6 +1166,7 @@ body #bg {
 }
 
 .main .footer .big-gray-web {
+  z-index: -2;
   top: 0;
   position: absolute;
   background: url(../media/logo-mark-bg.svg) no-repeat;

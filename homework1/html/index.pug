@@ -7,159 +7,160 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-        //- img(src="./media/bg.png")#bg
-        main.main
-            header.header
-                header    
-                    .some-element
-                    .some-other-element
-                    nav.nav
-                        a(href="#") 
-                            img(src="./media/logo.svg", alt="")
-                        a(href="#")#features Features
-                        a(href="#")#pricing Pricing
-                        a(href="#")#pages Pages 
-                        a(href="#")#help ?
-                .content
-                    .introduction
-                        h1 Start. Design. Publish!
-                        p Millions of people trust xPider to create beautiful websites.
-                        .btn.start-free-trial Start Free Trial
-                    .video-preview
-                        //- img(src="./media/video-preview@2x.png", alt="").video-preview
+        header.header
+            nav.header__nav
+                .header__some-element
+                .header__some-other-element
+                a(href="#") 
+                    img(src="./media/logo.svg", alt="")
+                a(href="#")#features Features
+                a(href="#")#pricing Pricing
+                a(href="#")#pages Pages 
+                a(href="#")#help ?
+            .header__content
+                .header__introduction
+                    h1.header__h1 Start. Design. Publish!
+                    p.header__p Millions of people trust xPider to create beautiful websites.
+                    .header__btn--start-free-trial Start Free Trial
+                .header__video-preview
 
+        main.main
             section.section1
-                header
+                header.section1__header
                     h3.section__h3 xPider  brings all your creativity together
                     p.section__p--when-u-need When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.
-                .wrapper
-                    .item.choosed
+                .section1__wrapper
+                    .section1__item.section1__item--choosed
                         img(src="./media/ic/drag.svg", alt="")
                         h5.section__h5 AI Page Builder
-                    .item
+                    .section1__item
                         img(src="./media/ic/settings.svg", alt="")
                         h5.section__h5 Easy to Customize
-                    .item
+                    .section1__item
                         img(src="./media/ic/responsive.svg", alt="")
                         h5.section__h5 Fits with Any Device
-                .page-builder
-                    img(src="./media/il/dot-grid-3.svg", alt="").dot-grid-3
-                    .build-anything
-                    img(src="./media/il/triangle.svg", alt="").triangle
-                    .description
-                        h4 Build anything, anytime!
-                        ul
+                .section1__page-builder
+                    img(src="./media/il/dot-grid-3.svg", alt="").section1__dot-grid-3
+                    .section1__build-anything
+                    img(src="./media/il/triangle.svg", alt="").section1__triangle
+                    .section1__description
+                        h4.section1__h4 Build anything, anytime!
+                        ul.section1__ul
                             li Your users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and functional. By a strong concept is what we stand for.
                             li They're probably distracted too. Keep it simple & clean, fun and functional. Clean aesthetics supported.
-                        blockquote(author="James Duren, CTO, Fish&co") “Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”
-
+                        blockquote(author="James Duren, CTO, Fish&co").section1__blockquote “Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”
 
             section.section2
-                main
-                    header
-                        h3.section__h3 How xPider works for you?
-                        p.section__p--when-u-need When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.
-                    .wrapper
-                        .item
-                            .wrapper-inner
-                                .img.img1
+                header.section2__header
+                    h3.section__h3 How xPider works for you?
+                    p.section__p--when-u-need When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.
+                    
+                main.section2__main
+                    .section2__wrapper
+                        .section2__item
+                            .section2__wrapper-inner
+                                .section2__img.section2__img--img1
                                 h5.section__h5 Get started with xPider
-                                p Login or Signup in xPider Dashboard to get started.
-                        img(src="./media/ic/arrow.svg", alt="")
-                        .item
-                            .wrapper-inner
-                                .img.img2
+                                p.section2__p Login or Signup in xPider Dashboard to get started.
+                        img(src="./media/ic/arrow.svg", alt="").section2__arrow
+                        .section2__item
+                            .section2__wrapper-inner
+                                .section2__img.section2__img--img2
                                 h5.section__h5 Build your website
-                                p Using our super powerful builder, build your website.
-                        img(src="./media/ic/arrow.svg", alt="")
-                        .item
-                            .wrapper-inner
-                                .img.img3
+                                p.section2__p Using our super powerful builder, build your website.
+                        img(src="./media/ic/arrow.svg", alt="").section2__arrow
+                        .section2__item
+                            .section2__wrapper-inner
+                                .section2__img.section2__img--img3
                                 h5.section__h5 Publish when finsihed
-                                p When you are done, hit the publish button to show the world!
+                                p.section2__p When you are done, hit the publish button to show the world!
+
             section.section3
-                main
-                    .img--build-with
-                    .container
-                        h4 Built for growth
-                        p Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.
-                        img(src="./media/ic/html.png", alt="")
-                        img(src="./media/ic/css.png", alt="")
-                        img(src="./media/ic/js.png", alt="")
-                        p Big, small, online, offline, local or international. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups. Check out some of our favorites.
-                        a(href="#") Try xPider now
+                main.section3__main
+                    .section3__img--build-with
+                    .section3__container
+                        h4.section3__h4 Built for growth
+                        p.section3__p Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.
+                        img(src="./media/ic/html.png", alt="").section3__tech-img
+                        img(src="./media/ic/css.png", alt="").section3__tech-img
+                        img(src="./media/ic/js.png", alt="").section3__tech-img
+                        p.section3__p Big, small, online, offline, local or international. Size doesn't matter. We work on diverse projects for top brands as well as for cool startups. Check out some of our favorites.
+                        a(href="#").section3__a Try xPider now
+
             section.section4
-                .circle
-                .unique-blocks
-                .container
-                    h4 1500+ Unique Blocks
-                    p Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.
-                    a(href="") See all blocks live
+                .section4__circle
+                .section4__unique-blocks
+                .section4__container
+                    h4.section4__h4 1500+ Unique Blocks
+                    p.section4__p Use Timeline to plan projects right the first time. See how the pieces fit together so you can spot gaps and overlaps before you start.
+                    a(href="").section4__a See all blocks live
+
             section.section5
-                main
-                    .dot-grid2
-                    .wave
-                    header
-                        h3.section__h3 You’re in a good hand
-                        p.section__p--when-u-need  Millions of people around the world have already made xPider the place where their dream happens.
-                    .container
-                        .item
-                            p Life before Company was very chaotic — we got a lot of phone calls, a lot of mistyped orders. So with Company, the ability to see the order directly from the customer makes it so streamlined.
-                            .img(person="Martin Jones, Creative Cons")
-                        .item
-                            p There’s no way we could have hired these many people and gotten so much business had we not had all of those back-office systems figured out. It’s been easier growing our company with a system that is so easy and scalable.
-                            .img(person="Jessia Cordon, Fashionier")
-                        .item
-                            p Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!
-                            .img(person="Cristina J, Journey360")
-                    a(href="#") Check all testimonials ?
-                    footer
+                header.section5__header
+                    h3.section__h3 You’re in a good hand
+                    p.section__p--when-u-need  Millions of people around the world have already made xPider the place where their dream happens.    
+                main.section5__main
+                    .section5__dot-grid2
+                    .section5__wave
+                    .section5__container
+                        .section5__item
+                            p.section5__p Life before Company was very chaotic — we got a lot of phone calls, a lot of mistyped orders. So with Company, the ability to see the order directly from the customer makes it so streamlined.
+                            .section5__person-img(person="Martin Jones, Creative Cons")
+                        .section5__item
+                            p.section5__p There’s no way we could have hired these many people and gotten so much business had we not had all of those back-office systems figured out. It’s been easier growing our company with a system that is so easy and scalable.
+                            .section5__person-img(person="Jessia Cordon, Fashionier")
+                        .section5__item
+                            p.section5__p Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!
+                            .section5__person-img(person="Cristina J, Journey360")
+                    a(href="#").section5__a Check all testimonials ?
+                    footer.section5__footer
                         img(src="./media/brands/logo - 1.png", alt="")
                         img(src="./media/brands/logo - 2.png", alt="")
                         img(src="./media/brands/logo - 3.png", alt="")
                         img(src="./media/brands/logo - 4.png", alt="")
                         img(src="./media/brands/logo - 5.png", alt="")
+
             section.section6
-                header
+                header.section6__header
                     h3.section__h3 Simple, Straight Pricing
                     p.section__p--when-u-need Millions of people around the world have already made xPider the place where their dream happens.
+                main.section6__main
+                    .section6__dot-grid-1
+                    .section6__dot-grid-4
+                    .section6__container
+                        .section6__card.section6__card--card1
+                            .section6__price 
+                                .section6__value $19
+                                h6.section6__h6 Billed Monthly
+                            .section6__description
+                                p.section6__p No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.
+                                .section6__btn Try 14 days free trial
+                        .section6__card.section6__card--card2
+                            .section6__price 
+                                .section6__value $9
+                                h6.section6__h6 Billed Anually
+                            .section6__description
+                                p.section6__p No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.
+                                .section6__btn Try 14 days free trial
+                footer.section6__footer
+                    p.section6__p Both pricings contains all of our features.
+                    a(href="#").section6__a Check all our features ?
 
-                main
-                    .dot-grid-1
-                    .dot-grid-4
-                    .container
-                        .container__card.card1
-                            .price 
-                                .value $19
-                                h6 Billed Monthly
-                            .description
-                                p No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.
-                                .btn Try 14 days free trial
-                        .container__card.card2
-                            .price 
-                                .value $9
-                                h6 Billed Anually
-                            .description
-                                p No one cares about products. People care about ideas. Is a product an idea? Noup. Is a brand? A good one is.
-                                .btn Try 14 days free trial
-                footer
-                    p Both pricings contains all of our features.
-                    a(href="#") Check all our features ?
             section.section7
-                header
+                header.section7__header
                     h3.section__h3 Try xPider for 14 days, for free!
                     p.section__p--when-u-need Millions of people around the world have already made xPider the place where their dream happens.
-                main
-                    .some-item1
-                    .some-item2
-                    .some-item3
-                    .btn--get-started Get started
+                main.section7__main
+                    .section7__some-item1
+                    .section7__some-item2
+                    .section7__some-item3
+                    .section7__btn--get-started Get started
+
             footer.footer
-                .big-gray-web
-                
-                main
-                    .web
-                    ul Company
+                .footer__big-gray-web
+                main.footer__main
+                    .footer__web
+                    ul.footer__ul Company
                         li
                             a(href="#") About Us
                         li
@@ -171,7 +172,7 @@ html(lang="en")
                         li
                             a(href="#") Brand Guidelines
 
-                    ul Product
+                    ul.footer__ul Product
                         li
                             a(href="#") Why xPider?
                         li
@@ -183,7 +184,7 @@ html(lang="en")
                         li
                             a(href="#") Security
 
-                    ul Resources
+                    ul.footer__ul Resources
                         li
                             a(href="#") Download
                         li
@@ -194,17 +195,17 @@ html(lang="en")
                             a(href="#") Partners
                         li
                             a(href="#") Events
-                footer
-                    .wrapper
-                        .wrapper-inner
-                            a(href="#") Status
-                            a(href="#") Privacy & Terms
-                            a(href="#") Contact Us
-                        .wrapper-inner
-                            .language
-                                img(src="./media/flags/us.png", alt="").flag
-                                span.language English ?
-                            .socials
-                                span.social#facebook
-                                span.social#twitter
-                                span.social#dribbble
+                footer.footer__footer
+                    .footer__wrapper
+                        .footer__wrapper-inner
+                            a(href="#").footer__a Status
+                            a(href="#").footer__a Privacy & Terms
+                            a(href="#").footer__a Contact Us
+                        .footer__wrapper-inner
+                            .footer__language
+                                img(src="./media/flags/us.png", alt="").footer__flag
+                                span.footer__language English ?
+                            .footer__socials
+                                span.footer__social#facebook
+                                span.footer__social#twitter
+                                span.footer__social#dribbble

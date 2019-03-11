@@ -1,56 +1,11 @@
-@font-face 
-    font-family: LastResort
-    src: url(../fonts/LastResort.woff) format(woff)
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-BlackItalic.woff2)
-    font-weight: 900
-    font-style: italic
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-Black.woff2)
-    font-weight: 900
-    
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-BoldItalic.woff2)
-    font-weight: bold
-    font-style: italic
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-Bold.woff2)
-    font-weight: bold
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-LightItalic.woff2)
-    font-weight: 300
-    font-style: italic
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-Regular.woff2)
-    
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-SemiBoldItalic.woff2)
-    font-weight: 600
-    font-style: italic
-
-@font-face 
-    font-family: Aileron
-    src: url(../fonts/Aileron-SemiBold.woff2)
-    font-weight: 600
+@import "fonts"
 
 body, h1, h2, h3, h4, h5, h6, p, blockquote 
     margin: 0
 
 body
     font-family: Aileron, LastResort, 'Times New Roman', Times, serif
-    
+
 .header
     overflow: hidden
     padding-bottom: 220px
@@ -162,29 +117,29 @@ body
     top: 115px
     right: -4px
 
-.header__video-preview::before
-    background: url(../media/ic/play.svg) no-repeat center center
-    height: 120px
-    width: 120px
-    border-radius: 50%
-    box-shadow: 0px 10px 30px rgba(0,0,0,.1)
-    background-color: #f1544b
-    content: ""
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    z-index: 4
+    &::before
+        background: url(../media/ic/play.svg) no-repeat center center
+        height: 120px
+        width: 120px
+        border-radius: 50%
+        box-shadow: 0px 10px 30px rgba(0,0,0,.1)
+        background-color: #f1544b
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 4
 
 
-h3.section__h3
+.section__h3
     color: rgba(44,46,48,1)
     font-size: 34px
     font-weight: bold
     line-height: 41px
     text-align: center
 
-p.section__p--when-u-need 
+.section__p--when-u-need 
     margin: auto
     margin-top: 23px
     color: rgba(126,128,133,1)
@@ -193,7 +148,7 @@ p.section__p--when-u-need
     line-height: 34px
     text-align: center
 
-h5.section__h5
+.section__h5
     margin-top: 12px
     color: rgba(44,46,48,1)	
     font-size: 21px	
@@ -225,6 +180,14 @@ h5.section__h5
     position: relative
     flex-wrap: wrap
 
+    &::after
+        position: absolute
+        bottom: 0px
+        content: ''
+        width: 100%
+        border-bottom: 3px solid #e6e9ed
+        z-index: -1
+
 .section1__item--choosed
     border-bottom: 3px solid #2c61e2
 
@@ -235,14 +198,6 @@ h5.section__h5
     max-width: 200px
     width: 100%
     padding-bottom: 26px
-
-.section1__wrapper::after
-    position: absolute
-    bottom: 0px
-    content: ''
-    width: 100%
-    border-bottom: 3px solid #e6e9ed
-    z-index: -1
 
 .section1__page-builder
     margin-top: 54px
@@ -307,16 +262,16 @@ h5.section__h5
     line-height: 28px
     border-top: 1px solid #e6e9ed
 
-.section1__blockquote::after
-    margin-top: 20px
-    content: attr(author)
-    display: block
-    font-style: normal
-    color: rgba(44,46,48,1)
-    font-family: Aileron
-    font-size: 16px
-    font-weight: 600
-    line-height: 20px
+    &::after
+        margin-top: 20px
+        content: attr(author)
+        display: block
+        font-style: normal
+        color: rgba(44,46,48,1)
+        font-family: Aileron
+        font-size: 16px
+        font-weight: 600
+        line-height: 20px
 
 
 .section2
@@ -357,13 +312,6 @@ h5.section__h5
     .section__h5
         margin-top: 25px
 
-.section2__img
-    border: 4px dotted rgba(198,203,215,1)
-    padding: 5px
-    width: 100px
-    height: 100px
-    border-radius: 50%
-
 .section2__img--img1::before
     content: ""
     background: url(../media/ic/pin.svg) no-repeat center center
@@ -376,12 +324,19 @@ h5.section__h5
     content: ""
     background: url(../media/ic/spaceship.svg) no-repeat center center
 
-.section2__img::before
-    width: 100%
-    height: 100%
-    display: block
+.section2__img
+    border: 4px dotted rgba(198,203,215,1)
+    padding: 5px
+    width: 100px
+    height: 100px
     border-radius: 50%
-    background-color: rgba(84,95,117,1)
+
+    &::before
+        width: 100%
+        height: 100%
+        display: block
+        border-radius: 50%
+        background-color: rgba(84,95,117,1)
 
 .section2__p
     margin-top: 10px
@@ -499,7 +454,7 @@ h5.section__h5
     
 .section4__a
     display: block
-    margin-top: 54px // !!!!!!!!!!!!!!
+    margin-top: 54px
     color: rgba(47,91,234,1)
     font-size: 18px
     font-weight: bold
@@ -573,23 +528,23 @@ h5.section__h5
     flex-basis: 100%
     display: flex
     
-.section5__person-img::before
-    content: ""
-    display: block
-    background: #000
-    width: 30px
-    height: 30px
-    border-radius: 50%
+    &::before
+        content: ""
+        display: block
+        background: #000
+        width: 30px
+        height: 30px
+        border-radius: 50%
 
-.section5__person-img::after
-    margin-top: 3px
-    margin-left: 12px
-    content: attr(person)
-    display: block
-    color: rgba(44,46,48,1)
-    font-size: 16px
-    font-weight: 600
-    line-height: 20px
+    &::after
+        margin-top: 3px
+        margin-left: 12px
+        content: attr(person)
+        display: block
+        color: rgba(44,46,48,1)
+        font-size: 16px
+        font-weight: 600
+        line-height: 20px
 
 .section5__a
     padding-top: 39px
@@ -634,17 +589,17 @@ h5.section__h5
     background-color: #eff4f4
     z-index: 2
 
-.section6__dot-grid-1::before
-    top: 35px
-    right: 27px
-    z-index: 1
-    position: absolute
-    background: url(../media/il/dot-grid.svg) no-repeat
-    background-size: cover
-    width: 158px
-    height: 153px
-    content: ""
-    display: block
+    &::before
+        top: 35px
+        right: 27px
+        z-index: 1
+        position: absolute
+        background: url(../media/il/dot-grid.svg) no-repeat
+        background-size: cover
+        width: 158px
+        height: 153px
+        content: ""
+        display: block
 
 .section6__dot-grid-4
     z-index: 1
@@ -877,9 +832,10 @@ h5.section__h5
     line-height: 21px
     list-style-type: none
 
-    li:first-child
-        margin-top: 22px
     li 
+        &:first-child
+            margin-top: 22px
+
         a 
             font-weight: normal
             color: rgba(84,86,90,1)

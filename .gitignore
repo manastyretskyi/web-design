@@ -1,1 +1,7 @@
-node_modules
+just4fun
+
+.vscode
+
+homework1/node_modules/
+
+just4fun/

@@ -60,6 +60,7 @@ exports.pug = Pug;
 const styles = () => {
   return src('css/main.sass')
     .pipe(sass({
+      pretty: true,
       includePaths: [
         require('node-bourbon').includePaths,
         require('node-normalize-scss').includePaths
@@ -80,6 +81,12 @@ const styles = () => {
 
 exports.styles = styles;
 
+const JS = () => {
+  return src('js/**/*.js')
+  .pipe(browserSync.reload({stream: true}));
+};
+
+exports.JS = JS
 // Gulp watcher
 
 const watcher = () => {
@@ -94,6 +101,10 @@ const watcher = () => {
     ],
     parallel(styles),
   );
+  watch(
+    'js/**/*.js',
+    parallel(JS)
+  );
 };
 
 exports.watcher = watcher;
@@ -107,6 +118,7 @@ exports.default = parallel(
   BrowserSync,
   Pug,
   styles,
+  JS,
   // js,
   // img,
   // fonts,
